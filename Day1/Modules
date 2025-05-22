@@ -1,0 +1,66 @@
+# -----------------------------
+# Importing Modules
+# -----------------------------
+
+# Import entire module
+import math
+
+print(math.pi)          # 3.141592653589793
+print(math.sqrt(16))    # 4.0
+
+# Import specific function(s) from module
+from math import sqrt, factorial
+
+print(sqrt(25))         # 5.0
+print(factorial(5))     # 120
+
+# Import with alias
+import numpy as np
+print(np.array([1, 2, 3]))
+
+# -----------------------------
+# Creating and Using Your Own Modules
+# -----------------------------
+
+# Suppose you create a file named mymodule.py with the following content:
+# ---------------------------------------
+# def greet(name):
+#     print(f"Hello, {name}!")
+# ---------------------------------------
+
+# In your main script, you can import and use it:
+# import mymodule
+# mymodule.greet("Alice")
+
+# Or import specific functions:
+# from mymodule import greet
+# greet("Bob")
+
+# -----------------------------
+# Popular Libraries Overview
+# -----------------------------
+
+# 1. pandas - for data manipulation and analysis
+import pandas as pd
+
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+print(df)
+
+# 2. numpy - numerical operations, arrays
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+print(arr * 2)   # Element-wise multiplication
+
+# 3. matplotlib - plotting and visualization
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y)
+plt.title("Simple Line Plot")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.show()

@@ -1,0 +1,4 @@
+Hello, world!
+This is the second line.
+Appending a new line.
+Inserted line in the middle.
